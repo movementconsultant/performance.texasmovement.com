@@ -1,521 +1,602 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Texas Movement Performance — Elite Movement Training, Dallas TX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Texas Movement Performance — Train like it’s engineering.</title>
+    <meta
+      name="description"
+      content="Texas Movement Performance is the physical layer of Texas Movement. Training systems, movement education, and recovery protocols built on repeatability, discipline, and sustainable output."
+    />
+    <link rel="canonical" href="https://performance.texasmovement.com" />
 
-  <!-- Primary description -->
-  <meta name="description" content="Texas Movement Performance is elite movement training built from first principles on Anatomy Trains methodology. Train the system, not the symptom. Operating in Dallas since 2015.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Texas Movement Performance — Train like it’s engineering." />
+    <meta
+      property="og:description"
+      content="Training systems, movement education, and recovery protocols built on repeatability, discipline, and sustainable output—not motivation and random intensity."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://performance.texasmovement.com" />
+    <meta property="og:image" content="/og-texas-movement-performance.png" />
+    <meta property="og:site_name" content="Texas Movement Performance" />
 
-  <!-- Theme color -->
-  <meta name="theme-color" content="#15181E">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Texas Movement Performance — Train like it’s engineering." />
+    <meta
+      name="twitter:description"
+      content="Programming, movement education, recovery protocols, and courses for athletes, coaches, and high-output operators."
+    />
+    <meta name="twitter:image" content="/og-texas-movement-performance.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Texas Movement Performance">
-  <meta property="og:title" content="Texas Movement Performance — Train the system, not the symptom.">
-  <meta property="og:description" content="Movement training built on Anatomy Trains and systems thinking. Map the lines, restore transmission, then load. Elite Secrets course and 1:1 lens from Dallas, TX.">
-  <meta property="og:url" content="https://performance.texasmovement.com">
-  <meta property="og:image" content="https://performance.texasmovement.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="Texas Movement Performance — train the system, not the symptom.">
+    <!-- JSON-LD (physical layer + course and video hooks) [file:153][web:49] -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://performance.texasmovement.com#org",
+        "name": "Texas Movement Performance",
+        "url": "https://performance.texasmovement.com",
+        "parentOrganization": {
+          "@type": "Organization",
+          "@id": "https://texasmovement.com#org",
+          "name": "Texas Movement International"
+        },
+        "founder": {
+          "@type": "Person",
+          "@id": "https://alexandermathai.com/person",
+          "name": "Alexander Mathai"
+        },
+        "sameAs": [
+          "https://texasmovement.com",
+          "https://www.udemy.com/course/elitesecrets/",
+          "https://www.youtube.com/@TexasMovementPerformance"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://performance.texasmovement.com#website",
+        "url": "https://performance.texasmovement.com",
+        "name": "Texas Movement Performance",
+        "publisher": {
+          "@id": "https://performance.texasmovement.com#org"
+        }
+      }
+    </script>
+    <!-- Example Course and VideoObject entities can be added in your build to reference specific lessons and videos. [file:153] -->
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Texas Movement Performance — Train the system, not the symptom.">
-  <meta name="twitter:description" content="Elite movement training from Texas Movement Performance. Treat the body as one connected system of force lines and load it cleanly.">
-  <meta name="twitter:image" content="https://performance.texasmovement.com/og-image.png">
-  <meta name="twitter:image:alt" content="Texas Movement Performance — train the system, not the symptom.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #020617;
+        --fg-primary: #e2e8f0;
+        --fg-secondary: #cbd5e1;
+        --fg-muted: #94a3b8;
+        --border-soft: rgba(148, 163, 184, 0.25);
+        --border-card: rgba(148, 163, 184, 0.22);
+        --accent: #38bdf8;
+      }
 
-  <style>
-    :root{
-      --paper:#E7E8E2;
-      --panel:#DDDED7;
-      --ink:#15181E;
-      --ink-soft:#454A54;
-      --line:#C4C6BD;
-      --line-strong:#A6A99F;
-      --white:#F4F5F0;
-      --compression:#274A78;
-      --tension:#BD3B22;
-      --wrap:1180px;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-    body{
-      background:var(--paper);
-      color:var(--ink);
-      font-family:"IBM Plex Sans",system-ui,sans-serif;
-      font-size:17px;
-      line-height:1.6;
-      -webkit-font-smoothing:antialiased;
-    }
-    a{color:inherit;text-decoration:none}
-    .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
-    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
-    .section{padding:96px 0;position:relative}
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg-secondary);
+        font-family: "Inter", system-ui, sans-serif;
+        line-height: 1.6;
+      }
 
-    .eyebrow{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.72rem;
-      letter-spacing:.2em;
-      text-transform:uppercase;
-      color:var(--ink-soft);
-      display:flex;
-      align-items:center;
-      gap:12px;
-      margin-bottom:22px;
-    }
-    .eyebrow::before{
-      content:"";
-      width:34px;
-      height:1px;
-      background:var(--tension);
-      flex:none;
-    }
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
 
-    h1,h2,h3{
-      font-family:"Space Grotesk",sans-serif;
-      font-weight:600;
-      line-height:1.04;
-      letter-spacing:-.01em;
-    }
-    h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:18px}
-    h3{font-size:1.15rem;margin-bottom:10px}
-    p{color:var(--ink-soft)}
-    p strong{color:var(--ink);font-weight:600}
+      .topbar,
+      .hero,
+      .section,
+      .footer {
+        margin-bottom: 2rem;
+      }
 
-    .topbar{
-      border-bottom:1px solid var(--line);
-      position:sticky;
-      top:0;
-      background:rgba(231,232,226,.86);
-      backdrop-filter:blur(8px);
-      z-index:50;
-    }
-    .topbar .wrap{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      height:58px;
-    }
-    .brand{
-      font-family:"Space Grotesk",sans-serif;
-      font-weight:600;
-      font-size:.95rem;
-      text-decoration:none;
-    }
-    .back{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.72rem;
-      letter-spacing:.06em;
-      color:var(--ink-soft);
-      text-decoration:none;
-    }
-    .back:hover{color:var(--ink)}
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        border-bottom: 1px solid var(--border-soft);
+        padding-bottom: 1rem;
+      }
 
-    .hero{
-      padding:84px 0 72px;
-      border-bottom:1px solid var(--line);
-      overflow:hidden;
-    }
-    .hero .wrap{
-      display:grid;
-      grid-template-columns:1.15fr .85fr;
-      gap:54px;
-      align-items:center;
-    }
-    .hero h1{
-      font-size:clamp(2.5rem,5.6vw,4.4rem);
-      font-weight:700;
-      margin:8px 0 24px;
-    }
-    .hero .lede{
-      font-size:1.12rem;
-      max-width:30em;
-      margin-bottom:34px;
-    }
-    .cta-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-    }
-    .btn{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.82rem;
-      letter-spacing:.04em;
-      text-decoration:none;
-      padding:15px 26px;
-      border:1px solid var(--ink);
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      transition:.18s ease;
-      background:var(--ink);
-      color:var(--white);
-    }
-    .btn:hover{background:transparent;color:var(--ink)}
-    .btn--ghost{background:transparent;color:var(--ink)}
-    .btn--ghost:hover{background:var(--ink);color:var(--white)}
-    .btn .arrow{transition:transform .18s ease}
-    .btn:hover .arrow{transform:translateX(3px)}
+      .brand {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+      }
 
-    .figure{
-      position:relative;
-      width:100%;
-      aspect-ratio:.82/1;
-    }
-    .fig{
-      width:100%;
-      height:100%;
-      display:block;
-    }
-    @keyframes pulse{
-      0%,100%{stroke-dashoffset:0}
-      50%{stroke-dashoffset:14}
-    }
-    .fig .meridian{
-      stroke-dasharray:2 5;
-      animation:pulse 4s linear infinite;
-    }
-    .fig-caption{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.66rem;
-      letter-spacing:.08em;
-      color:var(--ink-soft);
-      text-transform:uppercase;
-      margin-top:6px;
-      text-align:right;
-    }
+      .brand-mark {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid rgba(148, 163, 184, 0.6);
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+      }
 
-    .section--panel{
-      background:var(--panel);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-    }
-    .grid3{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-      margin-top:42px;
-    }
-    .card{
-      border:1px solid var(--line-strong);
-      background:var(--paper);
-      padding:30px 26px;
-    }
-    .card .n{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.66rem;
-      letter-spacing:.12em;
-      color:var(--tension);
-      margin-bottom:14px;
-    }
-    .card p{
-      font-size:.94rem;
-    }
+      .brand-name {
+        font-weight: 700;
+        color: var(--fg-primary);
+      }
 
-    .split{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:48px;
-      align-items:center;
-    }
-    .split p{
-      font-size:1.05rem;
-      margin-bottom:16px;
-    }
+      .brand-subtitle {
+        font-size: 0.9rem;
+        color: var(--fg-muted);
+      }
 
-    .statline{
-      display:flex;
-      gap:0;
-      border:1px solid var(--line-strong);
-      margin-top:40px;
-    }
-    .statline .s{
-      flex:1;
-      padding:26px 24px;
-      border-right:1px solid var(--line-strong);
-    }
-    .statline .s:last-child{border-right:none}
-    .statline .num{
-      font-family:"Space Grotesk",sans-serif;
-      font-weight:700;
-      font-size:2rem;
-      letter-spacing:-.02em;
-    }
-    .statline .lab{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.66rem;
-      letter-spacing:.1em;
-      text-transform:uppercase;
-      color:var(--ink-soft);
-      margin-top:4px;
-    }
+      .nav {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
 
-    .course{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:48px;
-      align-items:center;
-    }
-    .course .panel{
-      border:1px solid var(--ink);
-      box-shadow:6px 6px 0 var(--ink);
-      background:var(--paper);
-      padding:34px 30px;
-    }
-    .course .panel .k{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.66rem;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:var(--tension);
-      margin-bottom:12px;
-    }
-    .course ul{
-      list-style:none;
-      margin:18px 0 26px;
-    }
-    .course li{
-      padding:12px 0;
-      border-top:1px solid var(--line);
-      font-size:.94rem;
-      color:var(--ink);
-      display:flex;
-      gap:12px;
-    }
-    .course li::before{
-      content:"→";
-      color:var(--compression);
-      font-family:"IBM Plex Mono",monospace;
-    }
+      .nav a {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
 
-    .foot{
-      background:var(--ink);
-      color:var(--paper);
-      padding:84px 0 40px;
-    }
-    .foot h2{color:var(--white)}
-    .foot .eyebrow{color:#9aa0ab}
-    .foot .eyebrow::before{background:var(--tension)}
-    .connect{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:24px;
-      margin:38px 0 56px;
-    }
-    .connect a{
-      text-decoration:none;
-      border-top:1px solid #2c313b;
-      padding-top:16px;
-      display:block;
-    }
-    .connect .k{
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.66rem;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:#8a909b;
-      margin-bottom:6px;
-    }
-    .connect .v{
-      font-family:"Space Grotesk",sans-serif;
-      font-size:1.05rem;
-      color:var(--white);
-    }
-    .connect a:hover .v{color:#cdd2da}
-    .foot .legal{
-      border-top:1px solid #2c313b;
-      padding-top:24px;
-      font-family:"IBM Plex Mono",monospace;
-      font-size:.7rem;
-      letter-spacing:.05em;
-      color:#8a909b;
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:12px;
-    }
+      .nav a:hover {
+        text-decoration: underline;
+      }
 
-    @media(max-width:900px){
-      .hero .wrap{grid-template-columns:1fr;gap:30px}
-      .figure{max-width:340px;order:-1}
-      .grid3{grid-template-columns:1fr}
-      .split,.course{grid-template-columns:1fr}
-      .statline{flex-direction:column}
-      .statline .s{border-right:none;border-bottom:1px solid var(--line-strong)}
-      .connect{grid-template-columns:1fr}
-      .section{padding:68px 0}
-    }
-    @media(prefers-reduced-motion:reduce){
-      .fig .meridian{animation:none}
-      html{scroll-behavior:auto}
-    }
-    :focus-visible{outline:2px solid var(--compression);outline-offset:3px}
-  </style>
-</head>
-<body>
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.9fr);
+        gap: 1.5rem;
+        align-items: start;
+        padding-top: 0.5rem;
+      }
 
-<header class="topbar">
-  <div class="wrap">
-    <a href="https://texasmovement.com" class="brand">Texas Movement Performance</a>
-    <a href="https://texasmovement.com" class="back">← Texas Movement International</a>
-  </div>
-</header>
+      .eyebrow {
+        color: #60a5fa;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+      }
 
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <div class="eyebrow">TMP // Movement Training · Dallas, TX</div>
-        <h1>Train the system, not the symptom.</h1>
-        <p class="lede">
-          Movement training built from first principles on Anatomy Trains methodology. We treat the body as one connected system of force lines — and train it to transmit load cleanly from the ground up. Operating since 2015.
-        </p>
-        <div class="cta-row">
-          <a class="btn" href="https://www.udemy.com/course/elitesecrets/" target="_blank" rel="noopener">
-            Take the Elite Secrets course  <span class="arrow">→</span>
-          </a>
-          <a class="btn btn--ghost" href="https://www.youtube.com/@TexasMovementPerformance" target="_blank" rel="noopener">
-            Watch the protocols <span class="arrow">→</span>
-          </a>
+      h1 {
+        font-size: clamp(2.3rem, 4.2vw, 3.8rem);
+        line-height: 1.05;
+        color: var(--fg-primary);
+        margin: 0 0 0.5rem;
+      }
+
+      .hero-sub {
+        font-size: clamp(1.7rem, 3.1vw, 2.8rem);
+        line-height: 1.1;
+        color: var(--fg-secondary);
+        margin: 0 0 1rem;
+      }
+
+      .hero-body {
+        font-size: 0.98rem;
+        color: var(--fg-secondary);
+        max-width: 60ch;
+      }
+
+      h2 {
+        font-size: 0.95rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--fg-muted);
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        margin: 0 0 0.4rem;
+        color: var(--fg-primary);
+        font-size: 0.92rem;
+      }
+
+      .hero-card,
+      .card,
+      .faq-item,
+      .contact {
+        border: 1px solid var(--border-card);
+        border-radius: 1rem;
+        background: rgba(15, 23, 42, 0.55);
+      }
+
+      .hero-card {
+        overflow: hidden;
+      }
+
+      .hero-card-body {
+        padding: 1rem;
+      }
+
+      .hero-card-title {
+        margin: 0 0 0.35rem;
+        color: var(--fg-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.78rem;
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-top: 1.25rem;
+      }
+
+      .button {
+        padding: 0.75rem 1rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: var(--bg);
+      }
+
+      .button.secondary {
+        border: 1px solid rgba(148, 163, 184, 0.5);
+        color: #e5e7eb;
+      }
+
+      .section {
+        padding-top: 0.5rem;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .card,
+      .faq-item {
+        padding: 1rem;
+      }
+
+      .bullets {
+        display: grid;
+        gap: 0.75rem;
+        max-width: 70ch;
+      }
+
+      .faq {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .contact {
+        padding: 1rem;
+      }
+
+      .contact .fineprint {
+        font-size: 0.85rem;
+        color: var(--fg-muted);
+      }
+
+      .footer {
+        border-top: 1px solid var(--border-soft);
+        padding-top: 1rem;
+        color: var(--fg-muted);
+        font-size: 0.9rem;
+      }
+
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.85rem;
+      }
+
+      .footer-links a {
+        color: var(--fg-secondary);
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-separator {
+        color: #64748b;
+      }
+
+      @media (max-width: 800px) {
+        .hero,
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .topbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .footer-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">TP</div>
+          <div class="brand-copy">
+            <div class="brand-name">Texas Movement Performance</div>
+            <div class="brand-subtitle">Physical layer · Performance</div>
+          </div>
         </div>
-      </div>
+        <nav class="nav">
+          <a href="#overview">Overview</a>
+          <a href="#who">Who it’s for</a>
+          <a href="#how">How it works</a>
+          <a href="#programs">Programs</a>
+          <a href="#courses">Courses & videos</a>
+          <a href="#ecosystem">Ecosystem</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-      <aside class="figure">
-        <svg class="fig" viewBox="0 0 320 390" role="img" aria-labelledby="tmp-figure-title">
-          <title id="tmp-figure-title">GROUND FORCE — Force transmits along continuous lines</title>
-          <rect x="26" y="40" width="268" height="300" rx="28" fill="#15181E" stroke="#C4C6BD" stroke-width="1.4"/>
-          <circle cx="160" cy="108" r="54" fill="#111217" stroke="#A6A99F" stroke-width="1"/>
-          <path class="meridian" d="M110 260 C 140 180 180 160 210 80" fill="none" stroke="#3E7FA4" stroke-width="3"/>
-          <path class="meridian" d="M210 260 C 190 190 150 160 130 90" fill="none" stroke="#BD3B22" stroke-width="2.2"/>
-          <circle cx="110" cy="260" r="7" fill="#BD3B22"/>
-          <circle cx="210" cy="260" r="7" fill="#274A78"/>
-          <rect x="70" y="285" width="180" height="32" rx="6" fill="#0D0F14" stroke="#3E7FA4" stroke-width="1"/>
-          <text x="90" y="305" font-family="IBM Plex Mono, monospace" font-size="9" fill="#F4F5F0">
-            GROUND FORCE · CONTINUOUS LINES
-          </text>
-        </svg>
-        <div class="fig-caption">FIG. 02 — FORCE TRANSMITS ALONG CONTINUOUS LINES</div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section section--panel">
-    <div class="wrap">
-      <div class="eyebrow">TMP // 01 — The Method</div>
-      <h2>The body is one connected system.</h2>
-      <p>
-        Conventional training isolates muscles. Anatomy Trains maps the body as continuous lines of connective tissue — meridians that carry force from foot to skull.
-        <strong>Train the line, and the symptom resolves where you’d never think to look.</strong>
-      </p>
-      <p>
-        Every protocol here is engineered backward from that principle: find where the line stalls, restore clean transmission, then load it. Repeatable at every level — first session to elite.
-      </p>
-
-      <div class="statline">
-        <div class="s">
-          <div class="num">2015</div>
-          <div class="lab">Operating since</div>
+      <section id="overview" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">TRAINING · MOVEMENT · RECOVERY</p>
+          <h1>Train like it’s engineering.</h1>
+          <p class="hero-sub">
+            Training systems, movement education, and recovery protocols built on repeatability, discipline, and
+            sustainable output—not motivation and random intensity.
+          </p>
+          <p class="hero-body">
+            Texas Movement Performance is the physical layer of the ecosystem. It is for athletes, coaches, and
+            high-output operators who treat training as engineering. It solves the problem of effort that does not
+            compound because it is not structured. It works by prioritizing structure over intensity, running repeatable
+            protocols, programming recovery on purpose, and adjusting from what you measure. It connects to Health for
+            herbs-only recovery support, HERO for footwear that reflects how the foot actually moves, and Media for
+            documentation. The body responds to structure. So we program structure and recover on purpose.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="#courses">See courses & videos</a>
+            <a class="button secondary" href="#programs">Get programming</a>
+          </div>
         </div>
-        <div class="s">
-          <div class="num">AT</div>
-          <div class="lab">Anatomy Trains</div>
+
+        <aside class="hero-card">
+          <div class="hero-card-body">
+            <p class="hero-card-title">What this page is</p>
+            <p>
+              This is the physical systems layer—training, movement, and recovery—plus direct access to the long-form
+              course and YouTube content that teach the methodology end to end.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="who" class="section">
+        <h2>Who it’s for</h2>
+        <div class="bullets">
+          <p>
+            Athletes and coaches who want programming and movement education they can apply, teach, and repeat, not just
+            a pile of workouts.
+          </p>
+          <p>
+            Operators with real output demands who need training and recovery that hold up over months, not just for a
+            single phase.
+          </p>
+          <p>
+            Anyone who wants to understand why a protocol works—not just follow it. It is not for people chasing
+            intensity for its own sake. Sustainable output is the goal.
+          </p>
         </div>
-        <div class="s">
-          <div class="num">1:1</div>
-          <div class="lab">Systems-first lens</div>
+      </section>
+
+      <section id="how" class="section">
+        <h2>How it works</h2>
+        <div class="bullets">
+          <p><strong>Structure over intensity.</strong> We build systems and progressions first; intensity is programmed inside them, not the other way around.</p>
+          <p><strong>Repeatable protocols.</strong> Training is designed to be repeatable and measurable so the body can adapt instead of guess.</p>
+          <p><strong>Recover on purpose.</strong> Recovery—sleep, load management, and routine—is treated as part of the work, not an afterthought.</p>
+          <p><strong>Measure and adjust.</strong> We track signals that matter and adjust from data, not vibes.</p>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="eyebrow">TMP // 02 — What We Train</div>
-      <h2>Protocols engineered from first principles.</h2>
+      <section id="programs" class="section">
+        <h2>Programs</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Training systems</h3>
+            <p>
+              Programming built around repeatability and progressive load, not one-off workouts. You get a structure you
+              can run and coach, with clear progressions.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Movement education</h3>
+            <p>
+              Biomechanics and technique taught as a system you can apply across sports and contexts, not isolated cues.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Recovery protocols</h3>
+            <p>
+              Structured recovery—sleep, load management, and routine—treated as part of the program, with Health
+              covering herbs-only support where it fits.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Footwear fit & movement</h3>
+            <p>
+              Practical footwear guidance tied to HERO by Texas Movement, built on how the foot actually moves under
+              load and in daily life.
+            </p>
+          </article>
+        </div>
+      </section>
 
-      <div class="grid3">
-        <article class="card">
-          <div class="n mono">A — ASSESS</div>
-          <h3>Line diagnostics</h3>
-          <p>Map where force stalls across the body's meridians — the stall point, not the sore spot, is the target.</p>
-        </article>
-        <article class="card">
-          <div class="n mono">B — RESTORE</div>
-          <h3>Transmission work</h3>
-          <p>Restore clean load transfer through the connective system before adding intensity. Structure before strength.</p>
-        </article>
-        <article class="card">
-          <div class="n mono">C — LOAD</div>
-          <h3>Progressive protocols</h3>
-          <p>Repeatable, scalable loading patterns that hold under pressure — built to transfer from the gym to the field.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+      <section id="courses" class="section">
+        <h2>Courses & videos</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Elite Secrets — Udemy course</h3>
+            <p>
+              The full methodology—assessment lens, restore protocols, loading progressions, and the mental side of
+              performance—taught end to end.
+            </p>
+            <p>
+              <a
+                href="https://www.udemy.com/course/elitesecrets/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Enroll in Elite Secrets on Udemy →
+              </a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Texas Movement Performance on YouTube</h3>
+            <p>
+              Long-form breakdowns, tutorials, and movement education, built to sit on top of the same systems you’ll
+              see in programming and the course.
+            </p>
+            <p>
+              <a
+                href="https://www.youtube.com/@TexasMovementPerformance"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Watch Texas Movement Performance on YouTube →
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
 
-  <section class="section">
-    <div class="wrap course">
-      <div>
-        <div class="eyebrow">TMP // 03 — Learn the System</div>
-        <h2>Elite Secrets.</h2>
+      <section id="ecosystem" class="section">
+        <h2>Ecosystem connections</h2>
+        <div class="bullets">
+          <p>
+            Performance shares recovery systems with
+            <a href="https://health.texasmovement.com" target="_blank" rel="noreferrer">Texas Movement Health</a>, where
+            herbs-only support and routines live.
+          </p>
+          <p>
+            It shares footwear and movement thinking with
+            <a href="https://hero.texasmovement.com" target="_blank" rel="noreferrer">HERO by Texas Movement</a>, so
+            product reflects how the foot actually moves.
+          </p>
+          <p>
+            The work is documented by
+            <a href="https://media.texasmovement.com" target="_blank" rel="noreferrer">Texas Movement Media</a> so
+            training and systems have a durable record.
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <h3>What is Texas Movement Performance?</h3>
+            <p>
+              It is the physical layer of Texas Movement—training systems, movement education, and recovery protocols
+              built on a systems-first view of the body.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Who is it for?</h3>
+            <p>
+              Athletes, coaches, and high-output operators who want repeatable, sustainable output rather than random
+              intensity.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Is this personal training?</h3>
+            <p>
+              It is systems and programming. Individual coaching may be part of it, but the core product is a repeatable
+              structure you can run and teach.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How does recovery fit in?</h3>
+            <p>
+              Recovery is programmed, not optional. Health provides herbs-only recovery support where it fits inside the
+              larger system.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How does this connect to the rest of Texas Movement?</h3>
+            <p>
+              It shares recovery with Health, footwear with HERO, and documentation with Media, all under the company
+              layer at Texas Movement International.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Where do I learn the full methodology?</h3>
+            <p>
+              Through the Elite Secrets course on Udemy and the long-form videos on the Texas Movement Performance
+              YouTube channel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
         <p>
-          The full methodology, packaged. The same first-principles approach used in 1:1 work — the assessment lens, the restore protocols, and the loading progressions — taught end to end on Udemy.
+          For programming, movement education, or recovery protocol work, send a brief with context, constraints, and
+          what a good outcome would look like.
         </p>
-        <p>
-          <a href="https://www.udemy.com/course/elitesecrets/" target="_blank" rel="noopener">Enroll on Udemy →</a>
+        <a href="mailto:movementconsultant@gmail.com" class="email">movementconsultant@gmail.com</a>
+        <p class="fineprint">
+          This site does not provide medical advice. Training and recovery decisions should be made responsibly and, where appropriate, with a qualified professional.
         </p>
-      </div>
-      <aside class="panel">
-        <div class="k">Course // Elite Secrets</div>
-        <ul>
-          <li>Read the body as a connected force system.</li>
-          <li>Locate the stall point, not the symptom.</li>
-          <li>Restore transmission before loading.</li>
-          <li>Build protocols that scale to any level.</li>
-        </ul>
-        <a class="btn btn--ghost" href="https://www.udemy.com/course/elitesecrets/" target="_blank" rel="noopener">
-          View curriculum <span class="arrow">→</span>
-        </a>
-      </aside>
-    </div>
-  </section>
-</main>
+      </section>
 
-<footer class="foot">
-  <div class="wrap">
-    <div class="eyebrow">TMP // Connect</div>
-    <h2>Move with precision.</h2>
-    <div class="connect">
-      <a href="https://www.youtube.com/@TexasMovementPerformance" target="_blank" rel="noopener">
-        <div class="k">YouTube</div>
-        <div class="v">@TexasMovementPerformance</div>
-      </a>
-      <a href="https://www.udemy.com/course/elitesecrets/" target="_blank" rel="noopener">
-        <div class="k">Course</div>
-        <div class="v">Elite Secrets — Udemy</div>
-      </a>
-      <a href="https://texasmovement.com" target="_blank" rel="noopener">
-        <div class="k">Network</div>
-        <div class="v">texasmovement.com</div>
-      </a>
-    </div>
-    <div class="legal">
-      <span>© Texas Movement Performance — Part of Texas Movement International · Dallas, TX · Est. 2015</span>
-      <span>TRAIN THE SYSTEM, NOT THE SYMPTOM</span>
-    </div>
-  </div>
-</footer>
-
-</body>
+      <footer class="footer">
+        <div class="footer-row">
+          <p>© 2026 Texas Movement International · Systems for people who move.</p>
+          <div class="footer-links">
+            <a href="#overview">Back to top ↑</a>
+            <span class="footer-separator">·</span>
+            <a href="https://alexandermathai.com" target="_blank" rel="noreferrer">Founder</a>
+            <span class="footer-separator">·</span>
+            <a href="https://texasmovement.com" target="_blank" rel="noreferrer">TMI</a>
+            <span class="footer-separator">·</span>
+            <a href="https://health.texasmovement.com" target="_blank" rel="noreferrer">Health</a>
+            <span class="footer-separator">·</span>
+            <a href="https://hero.texasmovement.com" target="_blank" rel="noreferrer">HERO</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
