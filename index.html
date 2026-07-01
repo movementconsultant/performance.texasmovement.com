@@ -1,362 +1,569 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Texas Movement Performance — Train like it’s engineering.</title>
-    <meta
-      name="description"
-      content="Texas Movement Performance is the physical layer of Texas Movement. Training systems, movement education, and recovery protocols built on repeatability, discipline, and sustainable output."
-    />
-    <link rel="canonical" href="https://performance.texasmovement.com" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Texas Movement Performance — Training systems and recovery protocols.</title>
+  <meta
+    name="description"
+    content="Texas Movement Performance builds repeatable training systems and recovery protocols based on tensegrity and Anatomy Trains. Elite Secrets course, USATF coaching, and systems for serious athletes."
+  />
+  <link rel="canonical" href="https://performance.texasmovement.com/" />
+  <meta name="theme-color" content="#15181E" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Texas Movement Performance — Train like it’s engineering." />
-    <meta
-      property="og:description"
-      content="Training systems, movement education, and recovery protocols built on repeatability, discipline, and sustainable output—not motivation and random intensity."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://performance.texasmovement.com" />
-    <meta property="og:image" content="/og-texas-movement-performance.png" />
-    <meta property="og:site_name" content="Texas Movement Performance" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Texas Movement Performance" />
+  <meta property="og:title" content="Texas Movement Performance — Training systems and recovery protocols." />
+  <meta
+    property="og:description"
+    content="Performance training built on tensegrity and Anatomy Trains methodology. Elite Secrets course, systems-first programming, and recovery protocols for serious athletes and operators."
+  />
+  <meta property="og:url" content="https://performance.texasmovement.com/" />
+  <meta property="og:image" content="https://texasmovement.com/05_banner_header.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="Texas Movement Performance banner" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Texas Movement Performance — Train like it’s engineering." />
-    <meta
-      name="twitter:description"
-      content="Programming, movement education, recovery protocols, and courses for athletes, coaches, and high-output operators."
-    />
-    <meta name="twitter:image" content="/og-texas-movement-performance.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Texas Movement Performance — Training systems and recovery protocols." />
+  <meta
+    name="twitter:description"
+    content="Structured movement training, recovery protocols, and the Elite Secrets course. Systems-first programming for athletes, teams, and operators."
+  />
+  <meta name="twitter:image" content="https://texasmovement.com/05_banner_header.png" />
+  <meta name="twitter:image:alt" content="Texas Movement Performance banner" />
 
-    <!-- JSON-LD (physical layer + course and video hooks) [file:153][web:49] -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
+  <!-- Schema.org [file:153][web:49][web:201] -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://performance.texasmovement.com#org",
+      "name": "Texas Movement Performance",
+      "url": "https://performance.texasmovement.com/",
+      "logo": "https://texasmovement.com/01_primary_stacked_transparent.png",
+      "description": "Texas Movement Performance builds training systems and recovery protocols grounded in tensegrity and Anatomy Trains methodology.",
+      "parentOrganization": {
         "@type": "Organization",
-        "@id": "https://performance.texasmovement.com#org",
-        "name": "Texas Movement Performance",
-        "url": "https://performance.texasmovement.com",
-        "parentOrganization": {
-          "@type": "Organization",
-          "@id": "https://texasmovement.com#org",
-          "name": "Texas Movement International"
-        },
-        "founder": {
-          "@type": "Person",
-          "@id": "https://alexandermathai.com/person",
-          "name": "Alexander Mathai"
-        },
-        "sameAs": [
-          "https://texasmovement.com",
-          "https://www.udemy.com/course/elitesecrets/",
-          "https://www.youtube.com/@TexasMovementPerformance"
-        ]
+        "@id": "https://texasmovement.com#org",
+        "name": "Texas Movement International LLC"
+      },
+      "founder": {
+        "@type": "Person",
+        "@id": "https://alexandermathai.com/person",
+        "name": "Alexander Mathai"
+      },
+      "sameAs": [
+        "https://texasmovement.com",
+        "https://www.linkedin.com/posts/tmp_texas-movement-performance-activity-7470895752429449216-O5Lm",
+        "https://www.youtube.com/@TexasMovementPerformance"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://performance.texasmovement.com#website",
+      "name": "Texas Movement Performance",
+      "url": "https://performance.texasmovement.com/",
+      "description": "Official website of Texas Movement Performance, the movement training lane of Texas Movement International.",
+      "publisher": {
+        "@id": "https://performance.texasmovement.com#org"
       }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://performance.texasmovement.com#website",
-        "url": "https://performance.texasmovement.com",
-        "name": "Texas Movement Performance",
-        "publisher": {
-          "@id": "https://performance.texasmovement.com#org"
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://performance.texasmovement.com/"
         }
+      ]
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --paper: #e7e8e2;
+      --panel: #ddded7;
+      --hero: #e9e0d5;
+      --hero-soft: #f3ebe2;
+      --ink: #15181e;
+      --ink-soft: #454a54;
+      --line: #c4c6bd;
+      --line-strong: #a6a99f;
+      --graphite: #111217;
+      --white: #f4f5f0;
+      --compression: #274a78;
+      --tension: #bd3b22;
+      --wrap: 1180px;
+      --accent-ink: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 16.5px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--compression);
+      outline-offset: 3px;
+    }
+
+    .wrap {
+      max-width: var(--wrap);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(231, 232, 226, 0.92);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .topbar {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .brand span {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .brand-mark img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a:hover {
+      color: var(--ink);
+    }
+
+    .section {
+      padding: 88px 0;
+    }
+
+    .section--tight {
+      padding: 72px 0;
+    }
+
+    .section--panel {
+      background: var(--panel);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section--graphite {
+      background: var(--graphite);
+      color: var(--white);
+      border-top: 1px solid #2c313b;
+    }
+
+    .eyebrow {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: var(--tension);
+      flex: none;
+    }
+
+    .eyebrow--light {
+      color: #9aa0ab;
+    }
+
+    .eyebrow--light::before {
+      background: var(--tension);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 600;
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 3.1vw, 2.4rem);
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    p {
+      color: var(--ink-soft);
+      max-width: 44em;
+    }
+
+    .hero {
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, var(--hero), var(--hero-soft));
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .hero-tagline {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--ink-soft);
+      margin-bottom: 10px;
+    }
+
+    .hero-body {
+      font-size: 1.02rem;
+      margin-bottom: 16px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-ink);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-ink);
+      color: var(--white);
+      transition: 0.18s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: transparent;
+      color: var(--accent-ink);
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--accent-ink);
+    }
+
+    .btn--ghost:hover {
+      background: var(--accent-ink);
+      color: var(--white);
+    }
+
+    .btn .arrow {
+      transition: transform 0.18s ease;
+    }
+
+    .btn:hover .arrow {
+      transform: translateX(3px);
+    }
+
+    .hero-note {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .hero-figure {
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      padding: 18px 18px 14px;
+      background: rgba(255, 247, 238, 0.64);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem;
+    }
+
+    .hero-node {
+      border-radius: 12px;
+      padding: 10px 10px 9px;
+      background: var(--paper);
+      border: 1px solid var(--line-strong);
+      min-height: 84px;
+    }
+
+    .hero-node-label {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.65rem;
+      margin-bottom: 4px;
+      color: var(--ink-soft);
+    }
+
+    .hero-node--source {
+      border-color: var(--tension);
+    }
+
+    .hero-node--terminal {
+      border-color: var(--compression);
+    }
+
+    .hero-caption {
+      margin-top: 8px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      text-align: right;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border-radius: 14px;
+      border: 1px solid var(--line-strong);
+      background: var(--paper);
+      padding: 18px 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .card-label {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .card-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+    }
+
+    .card-body {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    .cta-link {
+      margin-top: 8px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .cta-link a {
+      border-bottom: 1px solid transparent;
+    }
+
+    .cta-link a:hover {
+      border-bottom-color: var(--accent-ink);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .faq-item {
+      border-radius: 14px;
+      border: 1px solid var(--line-strong);
+      padding: 16px 16px 14px;
+      background: var(--paper);
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      padding: 26px 0 32px;
+      background: var(--graphite);
+      color: #9aa0ab;
+      border-top: 1px solid #2c313b;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+    }
+
+    .footer-links a:hover {
+      color: #e5e7eb;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
       }
-    </script>
-    <!-- Example Course and VideoObject entities can be added in your build to reference specific lessons and videos. [file:153] -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      :root {
-        --bg: #020617;
-        --fg-primary: #e2e8f0;
-        --fg-secondary: #cbd5e1;
-        --fg-muted: #94a3b8;
-        --border-soft: rgba(148, 163, 184, 0.25);
-        --border-card: rgba(148, 163, 184, 0.22);
-        --accent: #38bdf8;
-      }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--fg-secondary);
-        font-family: "Inter", system-ui, sans-serif;
-        line-height: 1.6;
-      }
-
-      .page {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 2rem 1.25rem 3rem;
-      }
-
-      .topbar,
-      .hero,
       .section,
-      .footer {
-        margin-bottom: 2rem;
+      .section--tight {
+        padding: 64px 0;
       }
 
-      .topbar {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        align-items: center;
-        border-bottom: 1px solid var(--border-soft);
-        padding-bottom: 1rem;
+      .grid-2 {
+        grid-template-columns: 1fr;
       }
 
-      .brand {
-        display: flex;
-        gap: 0.75rem;
-        align-items: center;
+      nav {
+        display: none;
       }
 
-      .brand-mark {
-        width: 2rem;
-        height: 2rem;
-        border: 1px solid rgba(148, 163, 184, 0.6);
-        border-radius: 999px;
-        display: grid;
-        place-items: center;
+      .wrap {
+        padding: 0 20px;
       }
+    }
 
-      .brand-name {
-        font-weight: 700;
-        color: var(--fg-primary);
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
       }
-
-      .brand-subtitle {
-        font-size: 0.9rem;
-        color: var(--fg-muted);
-      }
-
-      .nav {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .nav a {
-        color: var(--accent);
-        text-decoration: none;
-        font-size: 0.9rem;
-      }
-
-      .nav a:hover {
-        text-decoration: underline;
-      }
-
-      .hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.9fr);
-        gap: 1.5rem;
-        align-items: start;
-        padding-top: 0.5rem;
-      }
-
-      .eyebrow {
-        color: #60a5fa;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        font-size: 0.78rem;
-      }
-
-      h1 {
-        font-size: clamp(2.3rem, 4.2vw, 3.8rem);
-        line-height: 1.05;
-        color: var(--fg-primary);
-        margin: 0 0 0.5rem;
-      }
-
-      .hero-sub {
-        font-size: clamp(1.7rem, 3.1vw, 2.8rem);
-        line-height: 1.1;
-        color: var(--fg-secondary);
-        margin: 0 0 1rem;
-      }
-
-      .hero-body {
-        font-size: 0.98rem;
-        color: var(--fg-secondary);
-        max-width: 60ch;
-      }
-
-      h2 {
-        font-size: 0.95rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--fg-muted);
-        margin-bottom: 1rem;
-      }
-
-      h3 {
-        margin: 0 0 0.4rem;
-        color: var(--fg-primary);
-        font-size: 0.92rem;
-      }
-
-      .hero-card,
-      .card,
-      .faq-item,
-      .contact {
-        border: 1px solid var(--border-card);
-        border-radius: 1rem;
-        background: rgba(15, 23, 42, 0.55);
-      }
-
-      .hero-card {
-        overflow: hidden;
-      }
-
-      .hero-card-body {
-        padding: 1rem;
-      }
-
-      .hero-card-title {
-        margin: 0 0 0.35rem;
-        color: var(--fg-muted);
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        font-size: 0.78rem;
-      }
-
-      .cta-row {
-        display: flex;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-        margin-top: 1.25rem;
-      }
-
-      .button {
-        padding: 0.75rem 1rem;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.9rem;
-      }
-
-      .button.primary {
-        background: var(--accent);
-        color: var(--bg);
-      }
-
-      .button.secondary {
-        border: 1px solid rgba(148, 163, 184, 0.5);
-        color: #e5e7eb;
-      }
-
-      .section {
-        padding-top: 0.5rem;
-      }
-
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-      }
-
-      .card,
-      .faq-item {
-        padding: 1rem;
-      }
-
-      .bullets {
-        display: grid;
-        gap: 0.75rem;
-        max-width: 70ch;
-      }
-
-      .faq {
-        display: grid;
-        gap: 0.75rem;
-      }
-
-      .contact {
-        padding: 1rem;
-      }
-
-      .contact .fineprint {
-        font-size: 0.85rem;
-        color: var(--fg-muted);
-      }
-
-      .footer {
-        border-top: 1px solid var(--border-soft);
-        padding-top: 1rem;
-        color: var(--fg-muted);
-        font-size: 0.9rem;
-      }
-
-      .footer-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .footer-links {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        font-size: 0.85rem;
-      }
-
-      .footer-links a {
-        color: var(--fg-secondary);
-        text-decoration: none;
-      }
-
-      .footer-links a:hover {
-        text-decoration: underline;
-      }
-
-      .footer-separator {
-        color: #64748b;
-      }
-
-      @media (max-width: 800px) {
-        .hero,
-        .cards {
-          grid-template-columns: 1fr;
-        }
-
-        .topbar {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .footer-row {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <main class="page">
-      <header class="topbar">
-        <div class="brand">
-          <div class="brand-mark">TP</div>
-          <div class="brand-copy">
-            <div class="brand-name">Texas Movement Performance</div>
-            <div class="brand-subtitle">Physical layer · Performance</div>
-          </div>
-        </div>
-        <nav class="nav">
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <a href="#top" class="brand" aria-label="Texas Movement Performance home">
+          <span class="brand-mark">
+            <img src="https://texasmovement.com/01_primary_stacked_transparent.png" alt="Texas Movement International logo" />
+          </span>
+          <span>TEXAS MOVEMENT PERFORMANCE</span>
+        </a>
+        <nav>
           <a href="#overview">Overview</a>
           <a href="#who">Who it’s for</a>
           <a href="#how">How it works</a>
@@ -366,237 +573,317 @@
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
-      </header>
+      </div>
+    </div>
+  </header>
 
-      <section id="overview" class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">TRAINING · MOVEMENT · RECOVERY</p>
-          <h1>Train like it’s engineering.</h1>
-          <p class="hero-sub">
-            Training systems, movement education, and recovery protocols built on repeatability, discipline, and
-            sustainable output—not motivation and random intensity.
+  <main id="top">
+    <!-- Hero / AEO block [file:153][web:49] -->
+    <section id="overview" class="section hero">
+      <div class="wrap hero-inner">
+        <div>
+          <div class="hero-tagline">MOVEMENT SYSTEMS · RECOVERY PROTOCOLS.</div>
+          <h1>Training built on tensegrity and Anatomy Trains.</h1>
+          <p class="hero-body">
+            Texas Movement Performance is the movement-training lane of Texas Movement International. It is for athletes,
+            teams, and high-output operators who treat training as engineering, not motivation.
           </p>
           <p class="hero-body">
-            Texas Movement Performance is the physical layer of the ecosystem. It is for athletes, coaches, and
-            high-output operators who treat training as engineering. It solves the problem of effort that does not
-            compound because it is not structured. It works by prioritizing structure over intensity, running repeatable
-            protocols, programming recovery on purpose, and adjusting from what you measure. It connects to Health for
-            herbs-only recovery support, HERO for footwear that reflects how the foot actually moves, and Media for
-            documentation. The body responds to structure. So we program structure and recover on purpose.
+            It solves the problem of fragmented drills and programs that ignore how the body actually organizes force.
+            It works by using tensegrity and Anatomy Trains methodology to design systems that respect structure, load,
+            and recovery. It connects to Health for herbs-only recovery support, to HERO for footwear and apparel, and
+            to Media for documentation and teaching content.
           </p>
-          <div class="cta-row">
-            <a class="button primary" href="#courses">See courses & videos</a>
-            <a class="button secondary" href="#programs">Get programming</a>
+          <div class="hero-ctas">
+            <a class="btn" href="#courses">
+              See Elite Secrets course <span class="arrow">→</span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">
+              Book performance work <span class="arrow">→</span>
+            </a>
+          </div>
+          <div class="hero-note">
+            TENSEGRITY · ANATOMY TRAINS · SYSTEMS-FIRST PROGRAMMING · RECOVERY THAT RESPECTS LOAD
           </div>
         </div>
 
-        <aside class="hero-card">
-          <div class="hero-card-body">
-            <p class="hero-card-title">What this page is</p>
-            <p>
-              This is the physical systems layer—training, movement, and recovery—plus direct access to the long-form
-              course and YouTube content that teach the methodology end to end.
-            </p>
+        <aside class="hero-figure">
+          <div class="hero-grid">
+            <div class="hero-node hero-node--source">
+              <div class="hero-node-label">Assessment</div>
+              <div>Map how your body carries load, stores tension, and compensates—before changing the program.</div>
+            </div>
+            <div class="hero-node">
+              <div class="hero-node-label">Programming</div>
+              <div>Design sessions built on lines of pull, not isolated muscles. Training that matches the engineering of your body.</div>
+            </div>
+            <div class="hero-node hero-node--terminal">
+              <div class="hero-node-label">Recovery</div>
+              <div>Protocols and herbs-only support that respect the same system, instead of treating recovery as an afterthought.</div>
+            </div>
+          </div>
+          <div class="hero-caption">
+            FIG. 03 — PERFORMANCE LANE · ASSESSMENT → PROGRAM → RECOVERY
           </div>
         </aside>
-      </section>
+      </div>
+    </section>
 
-      <section id="who" class="section">
-        <h2>Who it’s for</h2>
-        <div class="bullets">
-          <p>
-            Athletes and coaches who want programming and movement education they can apply, teach, and repeat, not just
-            a pile of workouts.
-          </p>
-          <p>
-            Operators with real output demands who need training and recovery that hold up over months, not just for a
-            single phase.
-          </p>
-          <p>
-            Anyone who wants to understand why a protocol works—not just follow it. It is not for people chasing
-            intensity for its own sake. Sustainable output is the goal.
-          </p>
-        </div>
-      </section>
-
-      <section id="how" class="section">
-        <h2>How it works</h2>
-        <div class="bullets">
-          <p><strong>Structure over intensity.</strong> We build systems and progressions first; intensity is programmed inside them, not the other way around.</p>
-          <p><strong>Repeatable protocols.</strong> Training is designed to be repeatable and measurable so the body can adapt instead of guess.</p>
-          <p><strong>Recover on purpose.</strong> Recovery—sleep, load management, and routine—is treated as part of the work, not an afterthought.</p>
-          <p><strong>Measure and adjust.</strong> We track signals that matter and adjust from data, not vibes.</p>
-        </div>
-      </section>
-
-      <section id="programs" class="section">
-        <h2>Programs</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Training systems</h3>
-            <p>
-              Programming built around repeatability and progressive load, not one-off workouts. You get a structure you
-              can run and coach, with clear progressions.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Movement education</h3>
-            <p>
-              Biomechanics and technique taught as a system you can apply across sports and contexts, not isolated cues.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Recovery protocols</h3>
-            <p>
-              Structured recovery—sleep, load management, and routine—treated as part of the program, with Health
-              covering herbs-only support where it fits.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Footwear fit & movement</h3>
-            <p>
-              Practical footwear guidance tied to HERO by Texas Movement, built on how the foot actually moves under
-              load and in daily life.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="courses" class="section">
-        <h2>Courses & videos</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Elite Secrets — Udemy course</h3>
-            <p>
-              The full methodology—assessment lens, restore protocols, loading progressions, and the mental side of
-              performance—taught end to end.
-            </p>
-            <p>
-              <a
-                href="https://www.udemy.com/course/elitesecrets/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Enroll in Elite Secrets on Udemy →
-              </a>
-            </p>
-          </article>
-          <article class="card">
-            <h3>Texas Movement Performance on YouTube</h3>
-            <p>
-              Long-form breakdowns, tutorials, and movement education, built to sit on top of the same systems you’ll
-              see in programming and the course.
-            </p>
-            <p>
-              <a
-                href="https://www.youtube.com/@TexasMovementPerformance"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Watch Texas Movement Performance on YouTube →
-              </a>
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="ecosystem" class="section">
-        <h2>Ecosystem connections</h2>
-        <div class="bullets">
-          <p>
-            Performance shares recovery systems with
-            <a href="https://health.texasmovement.com" target="_blank" rel="noreferrer">Texas Movement Health</a>, where
-            herbs-only support and routines live.
-          </p>
-          <p>
-            It shares footwear and movement thinking with
-            <a href="https://hero.texasmovement.com" target="_blank" rel="noreferrer">HERO by Texas Movement</a>, so
-            product reflects how the foot actually moves.
-          </p>
-          <p>
-            The work is documented by
-            <a href="https://media.texasmovement.com" target="_blank" rel="noreferrer">Texas Movement Media</a> so
-            training and systems have a durable record.
-          </p>
-        </div>
-      </section>
-
-      <section id="faq" class="section">
-        <h2>Frequently asked questions</h2>
-        <div class="faq">
-          <div class="faq-item">
-            <h3>What is Texas Movement Performance?</h3>
-            <p>
-              It is the physical layer of Texas Movement—training systems, movement education, and recovery protocols
-              built on a systems-first view of the body.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>Who is it for?</h3>
-            <p>
-              Athletes, coaches, and high-output operators who want repeatable, sustainable output rather than random
-              intensity.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>Is this personal training?</h3>
-            <p>
-              It is systems and programming. Individual coaching may be part of it, but the core product is a repeatable
-              structure you can run and teach.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>How does recovery fit in?</h3>
-            <p>
-              Recovery is programmed, not optional. Health provides herbs-only recovery support where it fits inside the
-              larger system.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>How does this connect to the rest of Texas Movement?</h3>
-            <p>
-              It shares recovery with Health, footwear with HERO, and documentation with Media, all under the company
-              layer at Texas Movement International.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>Where do I learn the full methodology?</h3>
-            <p>
-              Through the Elite Secrets course on Udemy and the long-form videos on the Texas Movement Performance
-              YouTube channel.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <h2>Contact</h2>
+    <!-- Who it’s for [file:153][web:49] -->
+    <section id="who" class="section section--tight">
+      <div class="wrap">
+        <div class="eyebrow">WHO IT’S FOR</div>
+        <h2>Athletes and operators who want systems, not hype.</h2>
         <p>
-          For programming, movement education, or recovery protocol work, send a brief with context, constraints, and
-          what a good outcome would look like.
+          Best fit: athletes, teams, and high-output operators whose bodies are already under load and who need training
+          that respects structure and recovery—basketball, track, field sports, and movement-heavy work.
         </p>
-        <a href="mailto:movementconsultant@gmail.com" class="email">movementconsultant@gmail.com</a>
-        <p class="fineprint">
-          This site does not provide medical advice. Training and recovery decisions should be made responsibly and, where appropriate, with a qualified professional.
+        <p>
+          It is for people who want to understand how their body works and are willing to train accordingly. It is not a
+          fit for shortcuts, novelty drills, or quick-fix promises. The work is grounded, measured, and built to hold up
+          under real seasons and stress.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <footer class="footer">
-        <div class="footer-row">
-          <p>© 2026 Texas Movement International · Systems for people who move.</p>
-          <div class="footer-links">
-            <a href="#overview">Back to top ↑</a>
-            <span class="footer-separator">·</span>
-            <a href="https://alexandermathai.com" target="_blank" rel="noreferrer">Founder</a>
-            <span class="footer-separator">·</span>
-            <a href="https://texasmovement.com" target="_blank" rel="noreferrer">TMI</a>
-            <span class="footer-separator">·</span>
-            <a href="https://health.texasmovement.com" target="_blank" rel="noreferrer">Health</a>
-            <span class="footer-separator">·</span>
-            <a href="https://hero.texasmovement.com" target="_blank" rel="noreferrer">HERO</a>
+    <!-- How it works [file:153][web:49] -->
+    <section id="how" class="section section--panel">
+      <div class="wrap">
+        <div class="eyebrow">HOW IT WORKS</div>
+        <h2>Structure first. Load next. Then performance.</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-label">Principle</div>
+            <div class="card-title">Tensegrity as the organizing idea.</div>
+            <p class="card-body">
+              Training respects the body’s tensegrity—compression and tension balanced across structures—instead of
+              isolating parts that never work alone.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Principle</div>
+            <div class="card-title">Anatomy Trains as the map.</div>
+            <p class="card-body">
+              Lines of pull and fascia trains guide programming. Drills and loads follow the map of how the body actually
+              moves, not just how it looks.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Principle</div>
+            <div class="card-title">Repeatable systems, not one-off workouts.</div>
+            <p class="card-body">
+              Programs are built as systems you can run—clear progressions, rest structures, and checkpoints—so you can
+              sustain performance across seasons.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Principle</div>
+            <div class="card-title">Recovery is part of the system.</div>
+            <p class="card-body">
+              Recovery protocols are designed with the same care as training sessions. Health herbs-only work connects
+              directly to how you train.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs [file:153][web:49] -->
+    <section id="programs" class="section">
+      <div class="wrap">
+        <div class="eyebrow">PROGRAMS</div>
+        <h2>Ways to work with Texas Movement Performance.</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-label">Program</div>
+            <div class="card-title">1:1 performance systems.</div>
+            <p class="card-body">
+              Individual programming built on tensegrity and Anatomy Trains for athletes and high-output operators.
+              Assessment, design, and progression tailored to your body and schedule.
+            </p>
+            <div class="cta-link">
+              <a href="#contact">Request 1:1 performance work →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-label">Program</div>
+            <div class="card-title">Team and group systems.</div>
+            <p class="card-body">
+              Team training structures for coaches who need a clear system that can be taught, repeated, and adjusted as
+              athletes move through seasons.
+            </p>
+            <div class="cta-link">
+              <a href="#contact">Ask about team programming →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-label">Program</div>
+            <div class="card-title">Movement diagnostics.</div>
+            <p class="card-body">
+              Focused diagnostics on how athletes carry load and tension—informing rehab, return-to-play, and performance
+              programming decisions.
+            </p>
+            <div class="cta-link">
+              <a href="#contact">Book a movement diagnostic →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses & videos: Elite Secrets, YouTube, LinkedIn [web:49][web:201] -->
+    <section id="courses" class="section section--tight section--panel">
+      <div class="wrap grid-2">
+        <div>
+          <div class="eyebrow">COURSES & VIDEO</div>
+          <h2>The Elite Secrets course and exercise library.</h2>
+          <p>
+            For athletes and coaches who need the full methodology packaged, the Elite Secrets course and video library
+            teach the same first-principles approach used in 1:1 work—the assessment lens, restore protocols, and
+            loading progressions, end to end. [web:49][web:201]
+          </p>
+          <div class="cards-grid" style="margin-top:20px;">
+            <article class="card">
+              <div class="card-label">Course</div>
+              <div class="card-title">Elite Secrets on Udemy.</div>
+              <p class="card-body">
+                Principles of elite athleticism for all sports, grounded in tensegrity and Anatomy Trains. Built for
+                athletes, coaches, and serious movers.
+              </p>
+              <div class="cta-link">
+                <a href="https://www.udemy.com" target="_blank" rel="noreferrer">
+                  Find Elite Secrets on Udemy →
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-label">Video</div>
+              <div class="card-title">Texas Movement Performance on YouTube.</div>
+              <p class="card-body">
+                Exercise library, breakdowns, and teaching content that show the methodology in practice.
+              </p>
+              <div class="cta-link">
+                <a href="https://www.youtube.com/@TexasMovementPerformance" target="_blank" rel="noreferrer">
+                  Go to TMP on YouTube →
+                </a>
+              </div>
+            </article>
           </div>
         </div>
-      </footer>
-    </main>
-  </body>
+
+        <aside class="card">
+          <div class="card-label">Signal</div>
+          <div class="card-title">Performance perspective on LinkedIn.</div>
+          <p class="card-body">
+            For coaches, teams, and operators who want the systems view on performance, follow Texas Movement Performance
+            on LinkedIn for breakdowns and lens pieces.
+          </p>
+          <div class="cta-link">
+            <a href="https://www.linkedin.com/posts/tmp_texas-movement-performance-activity-7470895752429449216-O5Lm" target="_blank" rel="noreferrer">
+              Follow TMP on LinkedIn →
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Ecosystem connections [file:153] -->
+    <section id="ecosystem" class="section section--tight">
+      <div class="wrap">
+        <div class="eyebrow">ECOSYSTEM CONNECTIONS</div>
+        <h2>Performance as one lane in Texas Movement.</h2>
+        <p>
+          Texas Movement Performance is the physical systems lane inside Texas Movement International. It connects to
+          Health for herbs-only recovery systems, to HERO for footwear and apparel that respect movement, and to Media
+          for documentation and teaching signal.
+        </p>
+        <p>
+          Performance work does not sit on its own. It is designed to compound with the rest of Texas Movement—so what
+          you train, what you wear, how you recover, and how you document the work all line up.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ [file:153] -->
+    <section id="faq" class="section section--tight">
+      <div class="wrap">
+        <div class="eyebrow">FAQ</div>
+        <h2>Frequently asked questions.</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Is this for pros only?</h3>
+            <p>
+              No. The methodology is built for serious athletes and movers at any level who are willing to train with
+              structure and discipline.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you provide medical advice?</h3>
+            <p>
+              No. Texas Movement Performance designs training systems and recovery protocols. Health herbs-only work and
+              medical care are separate. Always work with qualified medical professionals.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Can you work with my team remotely?</h3>
+            <p>
+              In many cases, yes. Team systems can be designed with remote assessment and teaching, then refined in
+              person as needed.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How should I start?</h3>
+            <p>
+              Start with a short note about your current training, injuries or history, and what you need your body to
+              do over the next season. We scope from there.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact [file:153][web:49] -->
+    <section id="contact" class="section section--tight section--panel">
+      <div class="wrap">
+        <div class="eyebrow">CONTACT</div>
+        <h2>Tell us how your body needs to perform.</h2>
+        <p>
+          For performance work, send a note with your sport or role, current training, any injuries or history that
+          matter, and what a good outcome looks like over the next 6–12 months.
+        </p>
+        <p class="cta-link">
+          <a href="mailto:movementconsultant@gmail.com">Email movementconsultant@gmail.com with “Performance” in the subject →</a>
+        </p>
+        <p style="margin-top:12px; font-size:0.9rem; color:#6b7280;">
+          Performance work is not medical care. Do not send confidential medical information. Use this lane to design
+          systems that respect your body and work alongside your medical team.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <span>
+          © Texas Movement International · Performance lane — performance.texasmovement.com
+        </span>
+        <div class="footer-links">
+          <a href="https://texasmovement.com/">TMI hub</a>
+          <a href="https://hero.texasmovement.com/">HERO</a>
+          <a href="https://consulting.texasmovement.com/">Consulting</a>
+          <a href="https://media.texasmovement.com/">Media</a>
+          <a href="https://distribution.texasmovement.com/">Distribution</a>
+          <a href="https://health.texasmovement.com/">Health</a>
+          <a href="https://founderlink.texasmovement.com/">FounderLink</a>
+          <a href="https://social.texasmovement.com/">Social</a>
+          <a href="https://reparations.texasmovement.com/">Reparations</a>
+          <a href="https://alexandermathai.com">Founder</a>
+          <a href="https://www.youtube.com/@TexasMovementPerformance">TMP YouTube</a>
+          <a href="https://www.linkedin.com/posts/tmp_texas-movement-performance-activity-7470895752429449216-O5Lm">TMP LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
