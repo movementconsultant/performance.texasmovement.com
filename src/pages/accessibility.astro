@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Accessibility";
+const description = "Accessibility statement for Texas Movement Performance.";
+---
+
+<BaseLayout title={title} description={description} path="/accessibility">
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">Legal</span>
+      <h1>Accessibility</h1>
+      <p>
+        This page targets WCAG 2.1 AA: a visible skip link, semantic heading
+        order, a single consistent focus style, and no interactive controls
+        that require a mouse.
+      </p>
+      <div class="notice">
+        <p>
+          <strong>Formal accessibility statement pending.</strong> A full
+          accessibility statement (conformance target, known issues, and a
+          contact route for reporting problems) has not been finalized for
+          this property. This page is a placeholder so the route exists and
+          is linked honestly. See <code>docs/LAUNCH_BLOCKERS.md</code> for
+          status.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
