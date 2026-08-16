@@ -1,0 +1,76 @@
+---
+import "../styles/global.css";
+import SkipLink from "../components/SkipLink.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE, IS_PREVIEW, canonicalUrl } from "../config/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  path?: string;
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  path = "/",
+} = Astro.props;
+
+const pageTitle = title === SITE.title ? title : `${title} — ${SITE.name}`;
+
+// No structured data (JSON-LD) is emitted anywhere in this shell. The
+// safety policy for this preview build caps any Organization/Person
+// structured data at the property's own bare name — rather than construct
+// a minimal Organization node that still needs a human call on exactly
+// which fields are "bare enough", this shell omits schema.org markup
+// entirely. See docs/LAUNCH_BLOCKERS.md.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15181E" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+
+    {
+      IS_PREVIEW ? (
+        <meta name="robots" content="noindex, nofollow" />
+      ) : (
+        <>
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href={canonicalUrl(path)} />
+        </>
+      )
+    }
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    {!IS_PREVIEW && <meta property="og:url" content={canonicalUrl(path)} />}
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <SkipLink />
+    {
+      IS_PREVIEW && (
+        <div class="preview-banner" role="region" aria-label="Preview status">
+          <p>Preview build — not the live site</p>
+        </div>
+      )
+    }
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

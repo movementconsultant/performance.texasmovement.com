@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE, TMI } from "../config/site";
+---
+
+<BaseLayout path="/">
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">Texas Movement</span>
+      <h1>{SITE.name}</h1>
+      <p class="blurb">{SITE.blurb}</p>
+
+      <div class="status-panel">
+        <span class="status-badge" role="status">
+          <span class="status-badge__dot" aria-hidden="true"></span>
+          Building
+        </span>
+        <p>This is being built. It is not yet open.</p>
+      </div>
+
+      <p class="ecosystem-note">
+        Texas Movement Performance is part of the Texas Movement ecosystem — see
+        {" "}<a href={TMI.url} rel="noopener">{TMI.url.replace("https://", "")}</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

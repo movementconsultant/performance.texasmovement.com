@@ -1,0 +1,12 @@
+---
+import { SITE } from "../config/site";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <span>&copy; {year} {SITE.name}.</span>
+    <span>Preview build — not the live site.</span>
+  </div>
+</footer>
